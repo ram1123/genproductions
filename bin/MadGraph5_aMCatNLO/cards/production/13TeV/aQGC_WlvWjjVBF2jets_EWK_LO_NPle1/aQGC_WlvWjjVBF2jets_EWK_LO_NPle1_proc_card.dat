@@ -32,6 +32,6 @@ define l+ = e+ mu+ ta+
 define l- = e- mu- ta-
 define vl = ve vm vt
 define vl~ = ve~ vm~ vt~
-generate p p > w+ w- j j QED=4 QCD=0 NP=2, w+ > l+ vl, w- > j j @1
-add process p p > w+ w- j j QED=4 QCD=0 NP=2, w- > l- vl~, w+ > j j @2
+generate p p > w+ w- j j QED=4 QCD=0 NP=1, w+ > l+ vl, w- > j j @1
+add process p p > w+ w- j j QED=4 QCD=0 NP=1, w- > l- vl~, w+ > j j @2
 output aQGC_WlvWjjVBF2jets_EWK_LO_NPle1
