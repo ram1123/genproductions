@@ -1,0 +1,59 @@
+#******************************************************************
+#                       Reweight Module                           *
+#******************************************************************
+
+# Without form factor (LFF -> inf)
+######################################################################
+# 6+1+6 for 1 dimensional limits
+ 
+#weight_	SM
+#launch
+#   set FM0 0.0
+#   set FM1 0.0
+#   set FM2 0.0
+#   set FM3 0.0
+#   set FM4 0.0
+#   set FM5 0.0
+#   set FM6 0.0
+#   set FM7 0.0
+#   set FT0 0.0
+#   set FT1 0.0
+#   set FT2 0.0
+#   set FT5 0.0
+#   set FT6 0.0
+#   set FT7 0.0
+
+#***** FT0 ********************************************************
+#weight_
+launch
+   set FM0 0.0
+   set FM1 0.0
+   set FM2 0.0
+   set FM3 0.0
+   set FM4 0.0
+   set FM5 0.0
+   set FM6 0.0
+   set FM7 0.0
+   set FT0 12.5e-12
+   set FT1 0.0
+   set FT2 0.0
+   set FT5 0.0
+   set FT6 0.0
+   set FT7 0.0
+
+#weight_
+launch
+   set FM0 0.0
+   set FM1 0.0
+   set FM2 0.0
+   set FM3 0.0
+   set FM4 0.0
+   set FM5 0.0
+   set FM6 0.0
+   set FM7 0.0
+   set FT0 -12.5e-12
+   set FT1 0.0
+   set FT2 0.0
+   set FT5 0.0
+   set FT6 0.0
+   set FT7 0.0
