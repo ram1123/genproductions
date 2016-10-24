@@ -21,6 +21,10 @@
 # All modification will start from the ORIGINAL card not from the
 # last define one.
 #* You can have as many weight as you want.
+#
+
+change rwgt_dir rwgt 
+
 #*******	SM	*****************************
 launch
         set anoinputs 11 0.000000e+00
