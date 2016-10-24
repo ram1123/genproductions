@@ -513,6 +513,13 @@ else
       export LIBRARY_PATH=$LD_LIBRARY_PATH
       cd madevent
       bin/madevent reweight pilotrun
+      # Compile each Subprocess explicitly
+      for file in $(ls -d rwgt/*/SubProcesses/P*); do
+        pushd $file
+        MENUM=2 make matrix2py.so
+        MENUM=3 make matrix3py.so
+        popd
+      done
       cd ..      
   fi
 
