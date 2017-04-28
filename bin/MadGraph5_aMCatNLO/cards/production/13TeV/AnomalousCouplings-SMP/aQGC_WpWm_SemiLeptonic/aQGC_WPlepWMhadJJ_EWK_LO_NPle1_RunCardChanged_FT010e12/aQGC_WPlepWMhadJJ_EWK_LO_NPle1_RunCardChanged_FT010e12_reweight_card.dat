@@ -3094,6 +3094,9 @@ launch --rwgt_name=FM7_300p0
 
 #************	FT0	***************************
 launch --rwgt_name=FT0_m6p8
+        set anoinputs 11 -12.500000e-12
+
+launch --rwgt_name=FT0_m6p8
         set anoinputs 11 -6.800000e-12
 
 
