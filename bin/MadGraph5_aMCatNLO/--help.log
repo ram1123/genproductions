@@ -1,0 +1,8 @@
+Starting job on  Thu Jun 4 20:43:21 CEST 2020
+Running on  Linux lxplus605.cern.ch 2.6.32-754.28.1.el6.x86_64 #1 SMP Thu Mar 12 13:39:11 CET 2020 x86_64 x86_64 x86_64 GNU/Linux
+System release  Scientific Linux CERN SLC release 6.10 (Carbon)
+name: --help
+carddir: 
+queue: local
+scram_arch: slc6_amd64_gcc630
+cmssw_version: CMSSW_9_3_16

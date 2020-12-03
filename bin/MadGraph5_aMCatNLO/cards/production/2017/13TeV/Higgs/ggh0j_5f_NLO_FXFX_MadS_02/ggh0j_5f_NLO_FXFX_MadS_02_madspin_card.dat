@@ -1,0 +1,16 @@
+set ms_dir ./madspingrid
+set BW_cut 90 # cut on how far the particle can be off-shell
+set max_running_process 1
+define l+ = e+
+define l- = e-
+
+#set Nevents_for_max_weigth 250 # number of events for the estimate of the max. weight
+#set max_weight_ps_point 400  # number of PS to estimate the maximum for each event
+set spinmode none
+
+#decay x0 > z z > l+ l- l+ l-
+#decay x0 > z z, ( z > l+ l-)
+decay x0 > z z
+#decay z > l+ l-
+
+launch
