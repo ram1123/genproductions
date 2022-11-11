@@ -262,6 +262,7 @@ make_gridpack () {
               tar zxvf ../$model
             elif [[ $model == *".tar"* ]]; then
               tar xavf ../$model
+	      cp ${CARDSDIR}/restrict_no_cmass_cwwwcbcw.dat EWdim6NLO/  # copy the restrict card inside model directory
             else 
               echo "A BSM model is specified but it is not in a standard archive (.zip or .tar)"
             fi
