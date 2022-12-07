@@ -99,11 +99,7 @@ c
      &              abs(ipdg(i)).eq.15).and.
      &              (abs(ipdg(i))+1.eq.abs(ipdg(j))).and.
      &              abs(ipdg(k)).eq.24) then
-                  if (invm3_04(p(0,i),p(0,j),p(0,k),1d0).lt.150.**2) then
-                     passcuts_user=.false.
-                     return
-                  endif
-                  if (invm3_04(p(0,i),p(0,j),p(0,k),1d0).gt.600.**2) then
+                  if (invm3_04(p(0,i),p(0,j),p(0,k),1d0).lt.800.**2) then
                      passcuts_user=.false.
                      return
                   endif
@@ -584,10 +580,10 @@ C
 C
     2 IF (N.EQ.1)            RETURN
       IF (MODE)    10,20,30
-   10 CALL SORTTI (A,INDEX,N)
+   10 STOP 5 ! CALL SORTTI (A,INDEX,N)
       GO TO 40
 C
-   20 CALL SORTTC(A,INDEX,N)
+   20 STOP 5 ! CALL SORTTC(A,INDEX,N)
       GO TO 40
 C
    30 CALL SORTTF (A,INDEX,N)

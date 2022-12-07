@@ -12,8 +12,5 @@ define vl~ = ve~ vm~ vt~
 
 generate p p > ell+ vl w- $$ t t~ H QED=3 [QCD] @0
 add process p p > ell+ vl w- j $$ t t~ H QED=3 [QCD] @1
-add process p p > ell- vl~ w+ $$ t t~ H QED=3 [QCD] @2
-add process p p > ell- vl~ w+ j $$ t t~ H QED=3 [QCD] @3
 
-output WWToLNujj_01j_aTGC_pTW-150toInf_mWV-150to600_4f_NLO_FXFX -nojpeg
-
+output WmWpToLpNujj_01j_aTGC_pTW-150toInf_mWV-800toInf_4f_NLO_FXFX -nojpeg
