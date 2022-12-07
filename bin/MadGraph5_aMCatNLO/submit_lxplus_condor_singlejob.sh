@@ -8,7 +8,8 @@ outdir=${4:-"gridpacks"}
 mkdir -p ${outdir}
 
 name=$(basename $carddir)
-scram_arch="slc7_amd64_gcc700"
+#scram_arch="slc7_amd64_gcc700"
+scram_arch=""
 cmssw_version=""
 
 rm ${outdir}/${name}_script.sh
@@ -16,7 +17,7 @@ touch ${outdir}/${name}_script.sh
 echo "source /cvmfs/cms.cern.ch/cmsset_default.sh" >> ${outdir}/${name}_script.sh
 echo "cmssw-cc7 --bind /pool:/pool --bind /afs:/afs -- bash -c \"" >> ${outdir}/${name}_script.sh
 
-echo "git clone https://github.com/ram1123/genproductions.git -b mg265UL_VVaTGC" >> ${outdir}/${name}_script.sh
+echo "git clone https://github.com/ram1123/genproductions.git -b mg33x_VVaTGC" >> ${outdir}/${name}_script.sh
 
 echo "cd genproductions/bin/MadGraph5_aMCatNLO/" >> ${outdir}/${name}_script.sh
 echo "mv \${_CONDOR_SCRATCH_DIR}/$(basename ${carddir}) cards_to_run" >> ${outdir}/${name}_script.sh
