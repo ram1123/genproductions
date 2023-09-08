@@ -99,7 +99,7 @@ c
      &              abs(ipdg(i)).eq.15).and.
      &              (abs(ipdg(i))+1.eq.abs(ipdg(j))).and.
      &              abs(ipdg(k)).eq.24) then
-                  if (invm3_04(p(0,i),p(0,j),p(0,k),1d0).lt.800.**2) then
+                  if (invm3_04(p(0,i),p(0,j),p(0,k),1d0).le.800.**2) then
                      passcuts_user=.false.
                      return
                   endif

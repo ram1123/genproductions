@@ -93,13 +93,13 @@ c
       enddo
 
       do i=0,nexternal
-         do j=i+1,nexternal
-            do k=j+1,nexternal
+         do j=0,nexternal
+            do k=0,nexternal
                if ((abs(ipdg(i)).eq.11.or.abs(ipdg(i)).eq.13.or.
      &              abs(ipdg(i)).eq.15).and.
      &              (abs(ipdg(i))+1.eq.abs(ipdg(j))).and.
      &              abs(ipdg(k)).eq.23) then
-                  if (invm3_04(p(0,i),p(0,j),p(0,k),1d0).lt.600.**2) then
+                  if (invm3_04(p(0,i),p(0,j),p(0,k),1d0).le.600.**2) then
                      passcuts_user=.false.
                      return
                   endif

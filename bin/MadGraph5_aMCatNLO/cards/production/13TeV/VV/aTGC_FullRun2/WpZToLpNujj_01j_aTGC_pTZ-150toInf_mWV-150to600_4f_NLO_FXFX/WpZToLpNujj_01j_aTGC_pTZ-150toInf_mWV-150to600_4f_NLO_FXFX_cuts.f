@@ -93,8 +93,8 @@ c
       enddo
 
       do i=0,nexternal
-         do j=i+1,nexternal
-            do k=j+1,nexternal
+         do j=0,nexternal
+            do k=0,nexternal
                if ((abs(ipdg(i)).eq.11.or.abs(ipdg(i)).eq.13.or.
      &              abs(ipdg(i)).eq.15).and.
      &              (abs(ipdg(i))+1.eq.abs(ipdg(j))).and.
